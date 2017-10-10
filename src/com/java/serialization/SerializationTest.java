@@ -23,7 +23,7 @@ public class SerializationTest {
         //let deserialize
         Object deserializedObject = null;
         try {
-            deserializedObject = SerializaionUtil.deserialize(person,file);
+            deserializedObject = SerializaionUtil.deserialize(file);
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         } catch (IOException e) {

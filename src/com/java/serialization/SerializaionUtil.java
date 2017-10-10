@@ -12,7 +12,7 @@ public class SerializaionUtil {
         fos.close();
     }
 
-    public  static Object deserialize(Object ob, String filePath)throws ClassNotFoundException,IOException{
+    public  static Object deserialize(String filePath)throws ClassNotFoundException,IOException{
         FileInputStream fis = new FileInputStream(filePath);
         ObjectInputStream ois = new ObjectInputStream(fis);
         return ois.readObject();

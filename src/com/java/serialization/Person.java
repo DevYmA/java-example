@@ -4,9 +4,12 @@ import java.io.Serializable;
 
 public class Person implements Serializable{
 
+    private static final long serialVersionUID = -6470090944414208496L;
+
     private static int id;
     private String name;
     transient private int salary;// not serialized to stream
+    private String passwor;
 
     @Override
     public String toString() {
@@ -38,5 +41,13 @@ public class Person implements Serializable{
 
     public void setSalary(int salary) {
         this.salary = salary;
+    }
+
+    public String getPasswor() {
+        return passwor;
+    }
+
+    public void setPasswor(String passwor) {
+        this.passwor = passwor;
     }
 }
